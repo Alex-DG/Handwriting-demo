@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <!-- Label of the view -->
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center_horizontal"
+        android:text="Drawing Board"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <!-- Add gesture button -->
+    <Button
+        android:id="@+id/addGesture_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="Add gesture" 
+        android:textColor="@color/white"/>
+    
+	<!-- Drawing gesture -->
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/label"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/label"
+        android:layout_below="@+id/addGesture_button"
+        android:gestureColor="@color/yellow" >
+
+    </android.gesture.GestureOverlayView>
+
+</RelativeLayout>

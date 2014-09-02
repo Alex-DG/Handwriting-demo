@@ -14,7 +14,7 @@ How to handwriting in Android, with two parts in one application:
 - you have a list of gestures, you can press an item to rename or delete
 - you can add a new gesture
 - save a new file of your list of gestures at the root of your phone device
-- 
+
 
 -> Use case:
 

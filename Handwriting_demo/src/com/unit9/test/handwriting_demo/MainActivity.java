@@ -71,7 +71,7 @@ public class MainActivity extends Activity {
 			// one prediction needed
 			if (predictions.size() > 0) {
 				Prediction prediction = predictions.get(0);				
-				// checking prediction
+				// checking prediction, increase 1.0 to have a better prediction matching
 				if (prediction.score > 1.0) {
 					// toast message with result
 					Toast.makeText(MainActivity.this, prediction.name, Toast.LENGTH_SHORT).show();

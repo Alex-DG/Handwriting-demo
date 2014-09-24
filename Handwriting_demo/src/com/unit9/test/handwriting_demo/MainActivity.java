@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 
     private String gesturesFilePath = "/storage/emulated/0/gestures";
     private File f;    
-	private GestureLibrary gesturesLib;
+    private GestureLibrary gesturesLib;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
